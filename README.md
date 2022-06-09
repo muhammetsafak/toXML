@@ -39,6 +39,8 @@ require_once "vendor/autoload.php";
 $data = array();
 
 $xml = new \MuhammetSafak\ToXML\XML();
+
+header('Content-Type: application/xml; charset=utf-8');
 echo $xml->withArray($data)
         ->toXML();
 ```
